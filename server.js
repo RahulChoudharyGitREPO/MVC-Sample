@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // ✅ MongoDB Connection (Use .env for security)
-mongoose.connect(mongodb+srv://rahulrajwwe2:NmSAs0z1azDDvRwm@cluster0.jcrzs.mongodb.net/, {
+mongoose.connect("mongodb+srv://rahulrajwwe2:NmSAs0z1azDDvRwm@cluster0.jcrzs.mongodb.net/", {
     dbname: "NodeJs_Mastery_course"
 }).then(() => {
     console.log("✅ Connected to Database");
