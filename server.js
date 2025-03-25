@@ -12,6 +12,9 @@ app.use(cors()); // Enable CORS
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.set("view engine", "ejs"); // ✅ Set EJS as the default templating engine
+
+
 // ✅ MongoDB Connection (Use .env for security)
 mongoose.connect("mongodb+srv://rahulrajwwe2:NmSAs0z1azDDvRwm@cluster0.jcrzs.mongodb.net/", {
     dbname: "NodeJs_Mastery_course"
