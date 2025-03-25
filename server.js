@@ -1,9 +1,9 @@
 import express, { urlencoded } from "express";
 import mongoose from "mongoose";
 import { userRegister } from "./controllers/userController.js";
-const cors = require('cors')
-require('dotenv').config()
+import dotenv from "dotenv";
 
+dotenv.config();
 const PORT = 8000;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
